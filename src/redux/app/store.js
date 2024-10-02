@@ -7,4 +7,8 @@ export default configureStore({
     country: countryReducer,
     news: newsReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });

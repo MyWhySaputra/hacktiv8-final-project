@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { fetchCountriesByCode } from "../redux/features/country/countrySlice";
 
 export default function CountryCompareResult() {
@@ -50,8 +50,8 @@ export default function CountryCompareResult() {
 
   return (
     <div className="bg-[#D2E0FB]">
-      <div className="container mx-auto p-6 pb-10">
-        <div className="grid items-center justify-center grid-cols-3 w-3/4 mx-auto">
+      <div className="container mx-auto p-6 pb-10 h-auto">
+        <div className="grid items-center justify-center grid-cols-1 md:grid-cols-3 w-full md:w-3/4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">
             {data[0]?.name?.common}
           </h2>
@@ -60,7 +60,7 @@ export default function CountryCompareResult() {
             {data[1]?.name?.common}
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
           {data.map((country, index) => (
             <div
               key={index}
@@ -147,6 +147,14 @@ export default function CountryCompareResult() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-8">
+          <Link
+            to={`/compare`}
+            className="text-center btn btn-wide rounded-md"
+          >
+            Back to Compare
+          </Link>
         </div>
       </div>
     </div>

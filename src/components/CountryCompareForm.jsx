@@ -44,17 +44,17 @@ export default function CountryCompareForm() {
 
   return (
     <div className="bg-[#D2E0FB]">
-      <div className="p-6 mx-auto w-full">
+      <div className="p-6 mx-auto w-full h-screen lg:h-auto">
         <h1 className="text-3xl font-bold text-center mb-6">
           Compare Countries
         </h1>
-        <div className="grid grid-cols-2 gap-8 text-center mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center mb-10">
           <div className="card w-full shadow-xl bg-[#FEF9D9]">
             <figure className="px-10 pt-10">
               <img
                 src={country1 ? country1.flag : FlagDefault}
-                alt="default"
-                className="rounded-xl w-auto h-48 bg-white"
+                alt={country1 ? country1.label : "default"}
+                className="rounded-xl w-auto md:h-32 lg:h-48"
               />
             </figure>
             <div className="card-body items-center text-center h-auto">
@@ -76,7 +76,7 @@ export default function CountryCompareForm() {
               <img
                 src={country2 ? country2.flag : FlagDefault}
                 alt="default"
-                className="rounded-xl w-auto h-48"
+                className="rounded-xl w-auto md:h-32 lg:h-48"
               />
             </figure>
             <div className="card-body items-center text-center h-auto">
