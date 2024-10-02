@@ -32,11 +32,10 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 export function fetchNews() {
   return async (dispatch, getState) => {
-    const { news } = getState(); // Access the current state
+    const { news } = getState();
     if (news.data.length > 0) {
-      return; // If data already exists, exit the function
+      return;
     }
-
     dispatch(fetchLoading(true));
     try {
       const response = await axios.get(
@@ -57,4 +56,3 @@ export function fetchNews() {
     }
   };
 }
-
