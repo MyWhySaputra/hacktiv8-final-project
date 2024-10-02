@@ -64,8 +64,8 @@ export default function CountryCompareForm() {
                 onChange={(selectedOption) => setCountry1(selectedOption)}
                 className="mt-1 block w-full"
                 placeholder="Search Country 1"
-                isSearchable
-                maxMenuHeight={200}
+                isSearchable={true}
+                maxMenuHeight={130}
                 menuPlacement="auto"
                 noOptionsMessage={() => "No countries found"}
               />
@@ -87,7 +87,7 @@ export default function CountryCompareForm() {
                 className="mt-1 block w-full"
                 placeholder="Search Country 2"
                 isSearchable
-                maxMenuHeight={200}
+                maxMenuHeight={130}
                 menuPlacement="auto"
                 noOptionsMessage={() => "No countries found"}
               />
