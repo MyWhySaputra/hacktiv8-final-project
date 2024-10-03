@@ -7,7 +7,6 @@ The **Country Population Ranking, Compare Country & News App** is a React applic
 - **Country Population Ranking**: Displays a list of countries ranked by population.
 - **Country Comparison**: Compare detailed data between two selected countries, including population, flag, and other relevant information.
 - **Latest News**: Fetch and display country-related news in real-time using an integrated news API.
-- **Search Functionality**: Easily search and select countries for comparison or news.
 - **Responsive Design**: Optimized for various screen sizes, providing an intuitive and clean user experience across devices.
 
 ## Technologies Used
