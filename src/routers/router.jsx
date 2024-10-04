@@ -6,11 +6,13 @@ import Compare from "../pages/ComparePage";
 import Landing from "../pages/LandingPage";
 import News from "../pages/NewsPage";
 import CountryCompareResult from "../components/CountryCompareResult";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: "",
