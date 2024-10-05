@@ -29,7 +29,9 @@ export default function CountryList() {
   }
 
   const formatPopulation = (index) => {
-    if (index >= 1000000) {
+    if (index >= 1000000000) {
+      return `${(index / 1000000000).toFixed(1)}B`;
+    } else if (index >= 1000000) {
       return `${(index / 1000000).toFixed(1)}M`;
     } else if (index >= 1000) {
       return `${(index / 1000).toFixed(1)}K`;

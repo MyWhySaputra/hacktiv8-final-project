@@ -82,7 +82,9 @@ export default function CountryCompareForm() {
             <div className="card-body items-center text-center h-auto">
               <Select
                 id="country2"
-                options={countryOptions}
+                options={countryOptions.filter(
+                  (country) => country.value !== country1?.value
+                )}
                 onChange={(selectedOption) => setCountry2(selectedOption)}
                 className="mt-1 block w-full"
                 placeholder="Search Country 2"
