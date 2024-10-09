@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <div className="bg-[#8EACCD] ">
-        <div className="navbar sticky top-0 z-50 ">
+      <div className="bg-[#8EACCD] px-9">
+        <div className="navbar sticky top-0 z-50">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="navbar-end">
             <input
               type="checkbox"
-              value="synthwave"
+              value="valentine"
               className="toggle theme-controller col-span-2 col-start-1 row-start-1 border-sky-400 bg-amber-300 [--tglbg:theme(colors.sky.500)] checked:border-blue-800 checked:bg-blue-300 checked:[--tglbg:theme(colors.blue.900)]"
             />
           </div>
