@@ -12,10 +12,11 @@ The **Country Population Ranking, Compare Country & News App** is a React applic
 ## Technologies Used
 
 - **React.js**: JavaScript library for building user interfaces.
-- **Redux**: State management for handling country data and API calls.
+- **Redux Toolkit**: Simplifies state management in React apps with efficient tools for Redux development.
 - **React Router**: Used for navigating between different app sections.
 - **React-Select**: Provides search and selection functionality for choosing countries.
 - **Tailwind CSS**: A utility-first CSS framework for responsive and efficient styling.
+- **Daisyui**: Tailwind CSS plugin offering pre-built UI components for faster design.
 - **Axios or Fetch API**: Handles API requests for retrieving country population and news data.
 
 ## Installation
